@@ -19,9 +19,6 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `date`) VALUES
 (1, 'Admin', '$2y$10$FfhPYubR4sOXAFSd3NzyQ.C77L4.qIsCa/YlYZCn.2eK8rfWr6oiq', 'admin@example.org', '2022-10-18 20:12:03');
-INSERT INTO `admin` (`id`, `username`, `password`, `email`, `date`) VALUES
-(1, 'abdallah', '45678910', 'abdallah@example.org', '2022-10-19 14:39:53');
-
 
 
 CREATE TABLE `page` (
