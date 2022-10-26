@@ -6,6 +6,8 @@ require_once 'header.php';
 <?php 
 include("categories.php");
 ?>
+<div class="w3-container w3-center w3-teal"><h3>posts</div>
+
 <?php
 $sql = "SELECT COUNT(*) FROM posts";
 $result = mysqli_query($dbcon, $sql);
