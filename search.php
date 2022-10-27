@@ -29,7 +29,7 @@ if (isset($_GET['q'])) {
 
         echo substr($des, 0, 100);
 
-        echo '</p><div class="w3-text-teal">';
+        echo '</p><div class="w3-text-black">';
         echo "<a href='$permalink'>Read more...</a>";
 
         echo '</div> <div class="w3-text-grey">';

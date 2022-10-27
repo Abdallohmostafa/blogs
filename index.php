@@ -6,7 +6,7 @@ require_once 'header.php';
 <?php 
 include("categories.php");
 ?>
-<div class="w3-container w3-center w3-teal"><h3>posts</div>
+<div class="w3-container w3-center w3-black"><h3>posts</div>
 
 <?php
 $sql = "SELECT COUNT(*) FROM posts";
@@ -52,7 +52,7 @@ if (mysqli_num_rows($result) < 1) {
 
     echo substr($des, 0, 100);
 
-    echo '<div class="w3-text-teal">';
+    echo '<div class="w3-text-black">';
     echo "<a href='$permalink'>Read more...</a></p>";
 
     echo '</div>';
@@ -73,7 +73,7 @@ $range = 5;
 for ($x = $page - $range; $x < ($page + $range) + 1; $x++) {
     if (($x > 0) && ($x <= $totalpages)) {
         if ($x == $page) {
-            echo "<div class='w3-teal w3-button'>$x</div>";
+            echo "<div class='w3-black w3-button'>$x</div>";
         } else {
             echo "<a href='?page=$x' class='w3-button w3-border'>$x</a>";
         }

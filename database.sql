@@ -9,7 +9,7 @@ SET time_zone = "+00:00";
 
 
 CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -18,19 +18,28 @@ CREATE TABLE `admin` (
 
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `date`) VALUES
-(1, 'Admin', '$2y$10$FfhPYubR4sOXAFSd3NzyQ.C77L4.qIsCa/YlYZCn.2eK8rfWr6oiq', 'admin@example.org', '2022-10-18 20:12:03');
+(1, 'Admin', '$2y$10$FfhPYubR4sOXAFSd3NzyQ.C77L4.qIsCa/YlYZCn.2eK8rfWr6oiq', 'admin@example.org', '2022-10-24 20:12:03');
 
 
 CREATE TABLE `page` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL ,
   `page_name` varchar(255) DEFAULT NULL,
   `content` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
 
+
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL ,
+  `catname` varchar(255) DEFAULT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
 CREATE TABLE `posts` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `slug` varchar(255) DEFAULT NULL,

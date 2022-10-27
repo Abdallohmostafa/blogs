@@ -1,5 +1,5 @@
 <p>
-<div class="w3-container w3-teal">
+<div class="w3-container w3-black">
     <p>All rights reserved | <?php echo date("Y"); ?></p>
 </div>
 </p>

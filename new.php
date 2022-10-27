@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     ?>
     <div class="w3-container">
         <div class="w3-card-4">
-            <div class="w3-container w3-teal">
+            <div class="w3-container w3-black">
                 <h2>New Post</h2>
             </div>
 
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
                     <textarea id = "description" row="30" cols="50" class="w3-input w3-border" name="description" required></textarea>
                 </p>
                 <p>
-                    <input type="submit" class="w3-btn w3-teal w3-round" name="submit" value="Post">
+                    <input type="submit" class="w3-btn w3-black w3-round" name="submit" value="Post">
                 </p>
             </form>
 

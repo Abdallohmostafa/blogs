@@ -39,12 +39,12 @@ if (isset($_POST['upd'])) {
     <div class="w3-container">
     <div class="w3-card-4">
 
-        <div class="w3-container w3-teal">
+        <div class="w3-container w3-black">
             <h2>Edit Post - </h2>
         </div>
             <h4 class="w3-container"><a href="<?=$permalink?>">Goto post</a> </h4>
 
-        <form action="" method="POST" class="w3-container">
+        <form action="admin.php" method="POST" class="w3-container">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <p>
                 <label>Title</label>
@@ -59,7 +59,7 @@ if (isset($_POST['upd'])) {
                 <input type="text" class="w3-input w3-border" name="slug" value="<?php echo $slug; ?>">
             </p>
             <p>
-                <input type="submit" class="w3-btn w3-teal w3-round" name="upd" value="Save post">
+                <input type="submit" class="w3-btn w3-black w3-round" name="upd" value="Save post">
             </p>
 
             <p>

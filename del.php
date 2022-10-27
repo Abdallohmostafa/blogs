@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $result = mysqli_query($dbcon, $sql);
 
     if ($result) {
-        header('location: index.php');
+        header('location: admin.php');
     } else {
         echo "Failed to delete." . mysqli_connect_error();
     }

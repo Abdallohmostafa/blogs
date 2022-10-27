@@ -38,8 +38,8 @@ echo "$time</div>";
 <?php
 if (isset($_SESSION['username'])) {
     ?>
-    <div class="w3-text-green"><a href="<?=$url_path?>edit.php?id=<?php echo $row['id']; ?>">[Edit]</a></div>
-    <div class="w3-text-red">
+    <div class="w3-text-black"><a href="<?=$url_path?>edit.php?id=<?php echo $row['id']; ?>">[Edit]</a></div>
+    <div class="w3-text-black">
         <a href="<?=$url_path?>del.php?id=<?php echo $row['id']; ?>"
            onclick="return confirm('Are you sure you want to delete this post?'); ">[Delete]</a></div>
     <?php
